@@ -48,7 +48,7 @@ body .section2 {
   margin: auto;
   text-align: center;
 }
-body .section2 h3 {
+body .section2 h2 {
   color: #00E1FF;
 }
 body .section3 {
@@ -60,7 +60,7 @@ body .section3 {
   flex-direction: column;
   align-items: center;
 }
-body .section3 h4 {
+body .section3 h2 {
   text-align: center;
   color: #FFFFFF;
 }
@@ -108,7 +108,7 @@ body .footer .linksAndSocial .icons {
 }
 body .footer .bottomFooter {
   padding-top: 2vh;
-  width: 80%;
+  width: 85%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */
