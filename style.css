@@ -54,7 +54,7 @@ body .section2 h3 {
 body .section3 {
   width: 100%;
   margin: auto;
-  height: 50vh;
+  height: 60vh;
   background-color: #00E1FF;
   display: flex;
   flex-direction: column;
@@ -73,8 +73,24 @@ body .section3 .allArticles {
   color: #FFFFFF;
 }
 body .section3 button {
+  width: 5%;
+  height: 3vh;
+  margin-bottom: 3%;
   background-color: #00E1FF;
   color: #FFFFFF;
   border-radius: 12px;
   border-color: #FFFFFF;
+}
+body .map img {
+  width: 100%;
+}
+body .footer {
+  background-color: #333232;
+  color: #FFFFFF;
+  list-style-type: none;
+}
+body .footer .links {
+  width: 90%;
+  margin: auto;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

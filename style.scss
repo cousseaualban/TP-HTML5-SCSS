@@ -65,7 +65,7 @@ body {
     .section3{
         width: 100%;
         margin: auto;
-        height: 50vh;
+        height: 60vh;
         background-color: $secondColor;
         display: flex;
         flex-direction: column;
@@ -86,10 +86,31 @@ body {
         }
 
         button{
+            width: 5%;
+            height: 3vh;
+            margin-bottom: 3%;
             background-color: $secondColor;
             color: $thirdColor;
             border-radius: 12px;
             border-color: $thirdColor;
+        }
+    }
+
+    .map{
+        img{
+            width: 100%;
+        }
+    }
+
+    .footer{
+        background-color: $footerColor;
+        color: $thirdColor;
+        list-style-type: none;
+
+        .links{
+            width: 90%;
+            margin: auto;
+            display: flex;
         }
     }
 }
