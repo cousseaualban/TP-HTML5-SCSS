@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  font-family: "Roboto", sans-serif;
 }
 body header nav {
   width: 80%;
@@ -16,6 +17,7 @@ body header nav ul {
   list-style-type: none;
 }
 body header nav ul button {
+  width: 30%;
   background-color: #00E1FF;
   color: #FFFFFF;
   border-radius: 12px;
@@ -107,8 +109,13 @@ body .footer .linksAndSocial .icons {
   justify-content: space-between;
 }
 body .footer .bottomFooter {
-  padding-top: 2vh;
-  width: 85%;
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  width: 75%;
+  margin: auto;
   display: flex;
   justify-content: flex-end;
+}
+body .footer .bottomFooter li {
+  width: 15%;
 }/*# sourceMappingURL=style.css.map */
