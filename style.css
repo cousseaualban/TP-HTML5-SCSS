@@ -89,8 +89,26 @@ body .footer {
   color: #FFFFFF;
   list-style-type: none;
 }
-body .footer .links {
-  width: 90%;
+body .footer .linksAndSocial {
+  padding-top: 2vh;
+  width: 80%;
   margin: auto;
   display: flex;
+  justify-content: space-between;
+}
+body .footer .linksAndSocial .links {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+body .footer .linksAndSocial .icons {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+body .footer .bottomFooter {
+  padding-top: 2vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

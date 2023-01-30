@@ -107,10 +107,32 @@ body {
         color: $thirdColor;
         list-style-type: none;
 
-        .links{
-            width: 90%;
+        .linksAndSocial{
+            padding-top: 2vh;
+            width: 80%;
             margin: auto;
             display: flex;
+            justify-content: space-between;
+
+            .links{
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .icons{
+                width: 10%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+
+        .bottomFooter{
+            padding-top: 2vh;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
