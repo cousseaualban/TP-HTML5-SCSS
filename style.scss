@@ -41,12 +41,55 @@ body {
             display: flex;
             align-items: center;
             color: $thirdColor;
+            padding-top: 30%;
         }
 
         p{
             width: 60%;
             text-align: center;
             color: $thirdColor;
+            padding-bottom: 5%;
+        }
+    }
+
+    .section2{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+
+        h3{
+            color: $secondColor;
+        }
+    }
+
+    .section3{
+        width: 100%;
+        margin: auto;
+        height: 50vh;
+        background-color: $secondColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4{
+            text-align: center;
+            color: $thirdColor;
+        }
+
+        .allArticles{
+            width: 30%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            color: $thirdColor;
+        }
+
+        button{
+            background-color: $secondColor;
+            color: $thirdColor;
+            border-radius: 12px;
+            border-color: $thirdColor;
         }
     }
 }
