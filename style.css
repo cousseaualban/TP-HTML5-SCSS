@@ -1,0 +1,13 @@
+body header nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+body header nav ul {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
