@@ -16,6 +16,11 @@ body header nav ul {
   align-items: center;
   list-style-type: none;
 }
+@media (max-width: 992px) {
+  body header nav ul {
+    width: 40%;
+  }
+}
 body header nav ul button {
   width: 30%;
   background-color: #00E1FF;
@@ -38,6 +43,12 @@ body .hero .title {
   align-items: center;
   color: #FFFFFF;
   padding-top: 30%;
+}
+@media (max-width: 992px) {
+  body .hero .title {
+    width: 20%;
+    text-align: center;
+  }
 }
 body .hero p {
   width: 60%;

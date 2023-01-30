@@ -1,146 +1,36 @@
-@import './variables';
+@import './sass/variables';
+@import './sass/header';
+@import './sass/hero';
+@import './sass/section2';
+@import './sass/section3';
+@import './sass/section4';
+@import './sass/footer';
+
 
 body {
     margin: 0%;
     font-family: 'Roboto', sans-serif;
     header {
-        nav {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            color: $navColor;
-            
-            ul {
-                width: 20%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                list-style-type: none;
-
-                button{
-                    width: 30%;
-                    background-color: $secondColor;
-                    color: $thirdColor;
-                    border-radius: 12px;
-                    border-color: $secondColor;
-                }
-            }
-        }
+        @include header;
     }
 
     .hero{
-        background-image: url('./assets/hero.jpg');
-        background-size: cover;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .title{
-            width: 10%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            color: $thirdColor;
-            padding-top: 30%;
-        }
-
-        p{
-            width: 60%;
-            text-align: center;
-            color: $thirdColor;
-            padding-bottom: 5%;
-        }
+        @include hero;
     }
 
     .section2{
-        width: 60%;
-        margin: auto;
-        text-align: center;
-
-        h2{
-            color: $secondColor;
-        }
+        @include section2;
     }
 
     .section3{
-        width: 100%;
-        margin: auto;
-        height: 60vh;
-        background-color: $secondColor;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2{
-            text-align: center;
-            color: $thirdColor;
-        }
-
-        .allArticles{
-            width: 30%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            color: $thirdColor;
-        }
-
-        button{
-            width: 5%;
-            height: 3vh;
-            margin-bottom: 3%;
-            background-color: $secondColor;
-            color: $thirdColor;
-            border-radius: 12px;
-            border-color: $thirdColor;
-        }
+        @include section3;
     }
 
     .map{
-        img{
-            width: 100%;
-        }
+        @include section4
     }
 
     .footer{
-        background-color: $footerColor;
-        color: $thirdColor;
-        list-style-type: none;
-
-        .linksAndSocial{
-            padding-top: 2vh;
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-
-            .links{
-                width: 20%;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .icons{
-                width: 10%;
-                display: flex;
-                justify-content: space-between;
-                
-            }
-        }
-
-        .bottomFooter{
-            padding-top: 6vh;
-            padding-bottom: 2vh;
-            width: 75%;
-            margin: auto;
-            display: flex;
-            justify-content: flex-end;
-
-            li{
-                width: 15%;
-            }
-        }
+        @include footer;
     }
 }

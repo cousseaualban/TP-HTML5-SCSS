@@ -1,0 +1,9 @@
+@mixin section2 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+    h2 {
+        color: $secondColor;
+    }
+}

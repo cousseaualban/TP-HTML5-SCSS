@@ -1,0 +1,33 @@
+@mixin section3 {
+    width: 100%;
+    margin: auto;
+    height: 60vh;
+    background-color: $secondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        color: $thirdColor;
+    }
+
+    .allArticles {
+        width: 30%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: $thirdColor;
+    }
+
+    button {
+        width: 5%;
+        height: 3vh;
+        margin-bottom: 3%;
+        background-color: $secondColor;
+        color: $thirdColor;
+        border-radius: 12px;
+        border-color: $thirdColor;
+    }
+}

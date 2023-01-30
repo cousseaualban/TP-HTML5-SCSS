@@ -1,0 +1,28 @@
+@mixin header{
+        nav {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            color: $navColor;
+            
+            ul {
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                    // Responsive tablette
+                    @media (max-width: 992px){
+                        width: 40%;
+                    }
+                button{
+                    width: 30%;
+                    background-color: $secondColor;
+                    color: $thirdColor;
+                    border-radius: 12px;
+                    border-color: $secondColor;
+                }
+            }
+        }
+    }

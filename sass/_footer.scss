@@ -1,0 +1,39 @@
+@mixin footer {
+    background-color: $footerColor;
+    color: $thirdColor;
+    list-style-type: none;
+
+    .linksAndSocial {
+        padding-top: 2vh;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .icons {
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+
+    .bottomFooter {
+        padding-top: 6vh;
+        padding-bottom: 2vh;
+        width: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            width: 15%;
+        }
+    }
+}

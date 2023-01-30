@@ -1,0 +1,30 @@
+@mixin hero {
+    background-image: url('./assets/hero.jpg');
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        width: 10%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        color: $thirdColor;
+        padding-top: 30%;
+
+        // Responsive tablette
+        @media (max-width: 992px) {
+            width: 20%;
+            text-align: center;
+        }
+    }
+
+    p {
+        width: 60%;
+        text-align: center;
+        color: $thirdColor;
+        padding-bottom: 5%;
+    }
+}
