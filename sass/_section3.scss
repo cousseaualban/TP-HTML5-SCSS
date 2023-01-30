@@ -19,6 +19,11 @@
         justify-content: space-between;
         text-align: center;
         color: $thirdColor;
+
+        // Responsive tablette
+        @media (max-width: 992px) {
+            width: 50%;
+        }
     }
 
     button {
@@ -29,5 +34,10 @@
         color: $thirdColor;
         border-radius: 12px;
         border-color: $thirdColor;
+
+        // Responsive tablette
+        @media (max-width: 992px) {
+            width: 10%;
+        }
     }
 }
