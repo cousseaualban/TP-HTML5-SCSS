@@ -1,20 +1,52 @@
+@import './variables';
+
 body {
+    margin: 0%;
     header {
         nav {
             width: 80%;
             margin: auto;
             display: flex;
+            justify-content: space-between;
+            color: $navColor;
+            
             ul {
-                width: 40%;
-                margin: auto;
+                width: 20%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 list-style-type: none;
 
-                li{
+                button{
+                    background-color: $secondColor;
+                    color: $thirdColor;
+                    border-radius: 12px;
+                    border-color: $secondColor;
                 }
             }
+        }
+    }
+
+    .hero{
+        background-image: url('./assets/hero.jpg');
+        background-size: cover;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title{
+            width: 10%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            color: $thirdColor;
+        }
+
+        p{
+            width: 60%;
+            text-align: center;
+            color: $thirdColor;
         }
     }
 }
