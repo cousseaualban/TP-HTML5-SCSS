@@ -2,36 +2,75 @@ body {
   margin: 0%;
   font-family: "Roboto", sans-serif;
 }
-body header nav {
+body header {
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+}
+body header .myNav {
+  position: relative;
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #808080;
 }
-body header nav ul {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-}
-@media (max-width: 992px) {
-  body header nav ul {
-    width: 40%;
+@media (max-width: 768px) {
+  body header .myNav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
+}
+body header .myNav #myLinks {
+  width: 40%;
 }
 @media (max-width: 768px) {
-  body header nav ul {
-    width: 50%;
+  body header .myNav #myLinks {
+    width: 20%;
+    display: none;
   }
 }
-body header nav ul button {
-  width: 30%;
+body header .myNav #myLinks ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+@media (max-width: 768px) {
+  body header .myNav #myLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body header .myNav #myLinks button {
+  width: 15%;
   background-color: #00E1FF;
   color: #FFFFFF;
   border-radius: 12px;
   border-color: #00E1FF;
+}
+@media (max-width: 768px) {
+  body header .myNav #myLinks button {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  body header .myNav a {
+    padding: 14px 16px;
+    display: block;
+  }
+}
+body header .myNav a.icon {
+  display: none;
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  body header .myNav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 body .hero {
   background-image: url("./assets/hero.jpg");
@@ -44,6 +83,11 @@ body .hero {
 @media (max-width: 768px) {
   body .hero {
     height: 70vh;
+  }
+}
+@media (max-width: 425px) {
+  body .hero {
+    height: 50vh;
   }
 }
 body .hero .title {
@@ -67,11 +111,22 @@ body .hero .title {
     padding-top: 40%;
   }
 }
+@media (max-width: 425px) {
+  body .hero .title {
+    width: 40%;
+    padding-top: 45%;
+  }
+}
 body .hero p {
   width: 60%;
   text-align: center;
   color: #FFFFFF;
   padding-bottom: 5%;
+}
+@media (max-width: 425px) {
+  body .hero p {
+    width: 90%;
+  }
 }
 body .section2 {
   width: 60%;
@@ -82,6 +137,11 @@ body .section2 {
 }
 body .section2 h2 {
   color: #00E1FF;
+}
+@media (max-width: 425px) {
+  body .section2 {
+    width: 90%;
+  }
 }
 body .section3 {
   width: 100%;
@@ -139,6 +199,11 @@ body .section3 button {
     width: 15%;
   }
 }
+@media (max-width: 425px) {
+  body .section3 button {
+    width: 25%;
+  }
+}
 body .map img {
   width: 100%;
 }
@@ -182,6 +247,11 @@ body .footer .container .linksAndSocial .links {
     flex-direction: column;
   }
 }
+@media (max-width: 425px) {
+  body .footer .container .linksAndSocial .links {
+    width: 40%;
+  }
+}
 body .footer .container .linksAndSocial .icons {
   width: 10%;
   display: flex;
@@ -198,6 +268,11 @@ body .footer .container .linksAndSocial .icons i {
   padding: 0.5em;
   min-width: 1em;
   text-align: center;
+}
+@media (max-width: 425px) {
+  body .footer .container .linksAndSocial .icons {
+    width: 40%;
+  }
 }
 body .footer .container .box {
   display: flex;

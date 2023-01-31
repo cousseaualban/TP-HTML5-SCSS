@@ -8,4 +8,9 @@
     h2 {
         color: $secondColor;
     }
+
+    // Responsive téléphone
+    @media (max-width: 425px){
+        width: 90%;
+    }
 }

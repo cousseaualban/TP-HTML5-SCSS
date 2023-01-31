@@ -18,15 +18,21 @@
 <body>
     <!-- Début du header -->
     <header>
-        <nav>
-            <h1>LOGO</h1>
-            <ul>
-                <li><a>LABEL</a></li>
-                <li><a>LABEL</a></li>
-                <li><a>LABEL</a></li>
-                <button>SIGN IN</button>
-            </ul>
-        </nav>
+            <nav class="myNav">
+                <h1>LOGO</h1>
+                <div id="myLinks">
+                    <ul>
+                        <li><a>LABEL</a></li>
+                        <li><a>LABEL</a></li>
+                        <li><a>LABEL</a></li>
+                        <button>SIGN IN</button>
+                    </ul>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
     </header>
 
     <!-- Fin du header -->
@@ -116,6 +122,7 @@
         </div>
     </footer>
     <!-- Fin du footer -->
+    <script src="./burgerMenu.js"></script>
 </body>
 
 </html>

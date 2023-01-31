@@ -1,35 +1,75 @@
-@mixin header{
-        nav {
-            width: 80%;
-            margin: auto;
+@mixin header {
+
+    .myNav {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $navColor;
+
+        // Responsive mobile
+        @media (max-width: 768px) {
+            width: 100%;
             display: flex;
-            justify-content: space-between;
-            color: $navColor;
-            
-            ul {
+            flex-direction: column;
+        }
+
+        #myLinks {
+            width: 40%;
+
+            // Responsive mobile
+            @media (max-width: 768px) {
                 width: 20%;
+                display: none;
+            }
+
+            ul {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
                 list-style-type: none;
 
-                    // Responsive tablette
-                    @media (max-width: 992px){
-                        width: 40%;
-                    }
+                //Responsive mobile
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
 
-                    // Responsive mobile
-                    @media (max-width: 768px){
-                        width: 50%;
-                    }
+            button {
+                width: 15%;
+                background-color: $secondColor;
+                color: $thirdColor;
+                border-radius: 12px;
+                border-color: $secondColor;
 
-                button{
-                    width: 30%;
-                    background-color: $secondColor;
-                    color: $thirdColor;
-                    border-radius: 12px;
-                    border-color: $secondColor;
+                @media (max-width: 768px) {
+                    width: 70%;
                 }
             }
         }
     }
+
+    /* Style navigation menu links */
+    .myNav a {
+        // Responsive mobile
+        @media (max-width: 768px) {
+            padding: 14px 16px;
+            display: block;
+        }
+    }
+
+    /* Style the hamburger menu */
+    .myNav a.icon {
+        display: none;
+        color: black;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
