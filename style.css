@@ -53,6 +53,12 @@ body header .myNav #myLinks button {
   color: #FFFFFF;
   border-radius: 12px;
   border-color: #00E1FF;
+  border-style: solid;
+}
+@media (max-width: 992px) {
+  body header .myNav #myLinks button {
+    width: 30%;
+  }
 }
 @media (max-width: 768px) {
   body header .myNav #myLinks button {
@@ -85,14 +91,19 @@ body header .myNav a.icon {
 body .hero {
   background-image: url("./assets/hero.jpg");
   background-size: cover;
-  height: 90vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 992px) {
+  body .hero {
+    height: 60vh;
+  }
+}
 @media (max-width: 768px) {
   body .hero {
-    height: 70vh;
+    height: 60vh;
   }
 }
 @media (max-width: 425px) {
@@ -106,19 +117,19 @@ body .hero .title {
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  padding-top: 30%;
+  padding-top: 20%;
 }
 @media (max-width: 992px) {
   body .hero .title {
     width: 20%;
     text-align: center;
-    padding-top: 40%;
+    padding-top: 20%;
   }
 }
 @media (max-width: 768px) {
   body .hero .title {
     width: 25%;
-    padding-top: 40%;
+    padding-top: 30%;
   }
 }
 @media (max-width: 425px) {
@@ -132,6 +143,11 @@ body .hero p {
   text-align: center;
   color: #FFFFFF;
   padding-bottom: 5%;
+}
+@media (max-width: 768px) {
+  body .hero p {
+    width: 80%;
+  }
 }
 @media (max-width: 425px) {
   body .hero p {
@@ -198,6 +214,7 @@ body .section3 button {
   color: #FFFFFF;
   border-radius: 12px;
   border-color: #FFFFFF;
+  border-style: solid;
 }
 @media (max-width: 992px) {
   body .section3 button {
